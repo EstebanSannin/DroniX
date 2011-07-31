@@ -1,0 +1,5 @@
+#!/system/bin/sh
+
+if [ -e /mnt/sdcard/dronix-backup ] then
+echo ueue
+fi

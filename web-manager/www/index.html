@@ -1,0 +1,61 @@
+<html>
+    <link rel='stylesheet' href='style.css' type='text/css'>
+    <head>
+        <title>Monitor Tools</title>
+        <script src="js/ajaxsbmt.js" type="text/javascript"></script>
+        <script language="javascript" src="dinamic.js" type=text/javascript></script>
+    </head>
+    <body>
+        <!-- onload="setInterval(mostraOra, 1000);"> -->
+
+        <div id='header'><img src="image/dronixlogo2.png">
+            <table border="0"><tr>
+                    <td class="headitem"><a href="index.html">home</a></td>
+                    <td class="headitem"><a href="versionNote.html">versionNote</a></td>
+                    <td class="headitem"><a href="modules.html">modules</a></td>
+                    <td class="headitem"><a href="sdcard">SD-Card</a></td>
+                    <td class="headitem"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZCZJMRK7UGHH6&lc=GB&item_name=DroniX%20Development&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted">donate</a></td></tr></table>
+        </div>
+        <div id='content'>
+            <br>
+            <script>
+                var reload;
+                function dinam(cgi, label){
+                    reload=setInterval(cgiRequest, 1500,cgi, label);
+                }
+                function stop(){
+                    clearInterval(reload);
+                }
+
+            </script>
+            <br>
+<pre>
+SysInfo:
+</pre>
+            <span id="system"></span>
+            <span id="ram"></span>
+            <br><pre>
+<span id="test"></span>
+</pre>
+            <script>        
+                setInterval(cgiRequest, 1000, 'cgi-bin/sysinfo.cgi', 'system');
+            </script> 
+            <h3>DroniX Information</h3>
+            <table border="0"><tr>
+                    <td>Author:</td>
+                    <td>Stefano Viola aka estebanSannin</td></tr>
+                <td>Version ROM:</td>
+                <td>0.4</td></tr>
+            <td>Version Web Manager:</td>
+            <td>0.2</td></tr>
+    </table>
+    <br>
+    <br>
+    DroniX is a Free Firmware for Android Devices.
+
+
+    </div>
+    <div id='footer'><font color=red>DroniX Web Manager</font> by <font color=yellow><a href='http://esteban.homelinux.org'>Stefano Viola (EstebanSannin)</a></font></div>
+</body>
+</html>
+
