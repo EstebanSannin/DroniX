@@ -6,7 +6,7 @@
 	function suggests. If this behavior does not work for you, 
 	modify the getTempFileName() function to suit your needs. */
 
-#define cgicTempDir "/data/www"
+#define cgicTempDir "/mnt/sdcard"
 
 #if CGICDEBUG
 #define CGICDEBUGSTART \
